@@ -1,0 +1,239 @@
+﻿<html>
+<head>
+	 <link rel="icon" 
+      type="image/ico" 
+      href="../favicon.ico">
+    <link async href="http://fonts.googleapis.com/css?family=Aguafina%20Script" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+	 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	
+<title>BeeDroid | Contactez-nous</title>
+<style>
+.header{
+height:240px;
+width100%;
+background:rgba(152,214,72,1);
+text-align:center;
+min-width:1300px;
+}
+.font1{
+height:70px;
+width:100%;
+
+font: normal 40px/1 "Aguafina Script", Helvetica, sans-serif;
+color: #fff;
+margin-left:auto;
+margin-right:auto;
+padding-top:8%;
+
+}
+html, body {
+  height: 900px;
+  width: 100%;
+  min-width:1300px;
+  padding: 0;
+  margin: 0;
+  background:#f6f6f6;
+   text-align:center;
+-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+
+}
+.font2{
+font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(36,48,64,1);
+
+}
+
+.container{
+padding-top:50px;
+border: 1px solid #BFE5FF;
+border-radius: 5px;
+width:70%;
+height:600px;
+margin-left:auto;
+margin-right:auto;
+margin-top:40px;
+margin-bottom:40px;
+font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(36,48,64,1);
+}
+.tab{
+padding-top:50px;
+margin-left:auto;
+margin-right:auto;
+height:300px;
+width:90%;
+
+}
+.buttons{
+width:300px;
+height:50px;
+margin-left:auto;
+margin-right:auto;
+}
+.button_style{
+
+border: 2px solid rgba(152,214,72,1);
+padding-top:8px;
+text-align:center;
+height:25px;
+width:110px;
+color:rgba(152,214,72,1);
+}
+
+.button_style:hover{
+background:rgba(152,214,72,1);
+border: 2px solid #fff;
+padding-top:8px;
+text-align:center;
+height:25px;
+width:110px;
+cursor:pointer;
+color:#fff;
+}
+input{
+border: 1px solid #BFE5FF;
+border-radius: 5px;
+height:30px;
+width:200px;
+padding-left:5px;
+}
+textarea{
+border: 1px solid #BFE5FF;
+border-radius: 5px;
+height:150px;
+width:350px;
+padding-left:5px;
+ resize:none;
+}
+
+</style>
+<script type="text/javascript">
+function verifiermail(mail) {
+      if ((mail.indexOf("@")>=0)&&(mail.indexOf(".")>=0)) {
+         return true 
+      } else {
+         
+         return false
+      }
+   }
+function verif_infos(){
+var verif=true;
+
+var name_val=document.getElementById("name").value;
+var mail_val=document.getElementById("mail").value;
+var msg_val=document.getElementById("msg").value;
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //car janvier est 0!
+var yyyy = today.getFullYear();
+var full_date=yyyy+"-"+mm+"-"+dd;
+
+var email_true=verifiermail(mail_val);
+
+if(name_val==""){
+var name_val=document.getElementById("name").style.background='#EF7F7F';
+verif=false;
+}
+if((mail_val=="")||(email_true==false)){
+var name_val=document.getElementById("mail").style.background='#EF7F7F';
+verif=false;
+}
+if(msg_val==""){
+var name_val=document.getElementById("msg").style.background='#EF7F7F';
+verif=false;
+}
+
+if(verif==true){
+
+//var ms ='{"table":"messages","mail":"'+mail_val+'","nom_prenom":"'+name_val+'","message":"'+msg_val_val+'","date":"'+full_date+'"}';
+//$.getJSON("/BeeDroid/controler/main.php",{client_request:ms});
+
+sendMail(mail_val,msg_val);
+alert('done !');
+}
+
+
+function sendMail(adress,text) {
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': 'U_caYnCYNKwJMxgAaMEM3g',
+        'message': {
+          'from_email': adress,
+          'to': [
+              {
+                'email': 'beedroid.service@gmail.com',
+                'name': 'Visitor',
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': 'Hello BeeDroid !',
+          'html': text
+        }
+      }
+     }).done(function(response) {
+      alert(adress+" "+text); // console.log(response); // if you're into that sorta thing
+     });
+}
+
+}
+
+
+
+
+
+
+
+
+
+function cancel(){
+document.getElementById("name").value="";
+document.getElementById("mail").value="";
+document.getElementById("msg").value="";
+document.location.href="../index.html";
+}
+function reset_name(){
+document.getElementById("name").style.background='#fff';
+}
+function reset_mail(){
+document.getElementById("mail").style.background='#fff';
+}
+function reset_msg(){
+document.getElementById("msg").style.background='#fff';
+}
+
+
+</script>
+
+</head>
+
+<body>
+<div class="header">
+<div class="font1"> 
+Contactez-nous 
+</div>
+</div>
+<div class="container">
+<div class="font2">Formulaire de contact</div>
+<div class="tab">
+<center><table>
+<tr><td>Nom et prénom :</td><td><input id="name" type="text" placeholder="votre nom ici" onFocus="reset_name();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Email :</td><td><input id="mail" type="text" placeholder="votre email ici" onFocus="reset_mail();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Message :</td><td><textarea id="msg" placeholder="votre message ici ..." onFocus="reset_msg();"></textarea></td></tr>
+</table></center></div>
+<div class="buttons"><a href="#cancel"><div style="float:left;" class="button_style" onClick="cancel();">Annuler</div></a><a href="#send" onClick="verif_infos();"><div style="float:right;" class="button_style" type="button">Envoyer</div></a></div>
+</div>
+
+
+</body>
+</html>

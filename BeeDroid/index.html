@@ -1,0 +1,236 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" 
+      type="image/ico" 
+      href="favicon.ico">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link async href="http://fonts.googleapis.com/css?family=Aguafina%20Script" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="index/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="index/css/style.css"> <!-- Resource style -->
+	<script src="index/js/modernizr.js"></script> <!-- Modernizr -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<title>BeeDroid | Acceuil</title>
+	
+	<script type="text/javascript">
+	
+	var main0='{"visite":"create"}';
+$.getJSON("chart/graphvisitor/nbvisite.php",{visitor:main0});
+ 
+	
+	
+	
+	
+        var coun=0;
+        function fixable_btn(){
+        if(coun==0){
+        document.getElementById("btncontc").style.position="fixed";
+         coun=1;
+        }
+        else{
+
+        document.getElementById("btncontc").style.position="relative";
+        coun=0;
+          }
+         
+         }
+
+	function aff_faq(){
+	 window.open("index/FAQ/FAQ.html");
+	}
+	function log(){
+	  document.location.href="load.php";
+	}
+	function contact(){
+	  document.location.href="index/contact.html";
+	}
+	function facebook_link(){
+    window.open("https://www.facebook.com/");
+}
+function google_link(){
+    window.open("https://plus.google.com/104868417430006939754/");
+}
+function twitter_link(){
+    window.open("https://twitter.com/?lang=fr");
+}
+function instagram_link(){
+    window.open("https://instagram.com/");
+}
+function linked_in_link(){
+    window.open("https://www.linkedin.com/uas/login");
+}
+
+
+
+function tel()
+{
+
+document.location.href="download/download.php";
+
+}
+
+
+
+
+	</script>
+</head>
+<body>
+<div class="menu_top">
+<a href="#" onClick="log();"><div class="elt_connect">Connexion</div></a>
+<a  href="#" onClick="tel();" ><div class="elt_tele">Téléchargements</div></a>
+<div class="elt_tele" onClick="contact();">Contactez-nous</div>
+<a href="#" onClick="aff_faq();"><div class="elt_tele">FAQ</div></a>
+<a id="btncontc" onClick="fixable_btn();" href="#cd-nav" class="cd-nav-trigger" style="float:left;">Menu 
+		<span class="cd-nav-icon"></span>
+
+		<svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+			<circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+		</svg>
+	</a>
+</div>
+
+
+
+	<main style="overflow:hidden;">
+		<h1><div class="logo"></div><div class="font1">BeeDroid</div></h1>
+
+		<div style="color: #d6dfdb;text-align:center;"><p>La plus pratique application de géolocalisation du smartphone et l'accés à distance <br> à travers le web.</p></div>
+		<div class="buttons_container"><div class="bouton_faq">Plus d'infos</div><div class="bouton_tele" onClick="tel();">Télécharger</div></div>
+	</main>
+
+	
+	
+	<div id="cd-nav" class="cd-nav" style="overflow:hidden;">
+		<div class="cd-navigation-wrapper" style="overflow:hidden;">
+			<div class="cd-half-block" style="overflow:hidden;">
+				<h2>Acceuil</h2>
+
+				<nav>
+					<ul class="cd-primary-nav" style="overflow:hidden;">
+						<li><a href="#0" class="selected">Notre groupe</a></li>
+						<li><a href="#0">Nos services</a></li>
+						<li><a href="#0">Nos projects</a></li>
+						<li><a href="#0">Informations</a></li>
+						<li><a href="#0" onClick="contact();">Contactez nous</a></li>
+					</ul>
+				</nav>
+			</div><!-- .cd-half-block -->
+			
+			<div class="cd-half-block">
+				<address>
+					<ul class="cd-contact-info">
+						<li><a href="#contact" onClick="contact();">beedroid.service@Gmail.com</a></li>
+						<li>+21626346379</li>
+						<li>
+							<span>Rue corniche</span>
+							<span>5000</span>
+							<span>Monastir, Tunisie</span>
+						</li>
+					</ul>
+				</address>
+			</div> <!-- .cd-half-block -->
+		</div> <!-- .cd-navigation-wrapper -->
+	</div> <!-- .cd-nav -->
+<script src="index/js/jquery-2.1.1.js"></script>
+<script src="index/js/main.js"></script> <!-- Resource jQuery -->
+<div style="width:100%;height:2500px;background:rgb(230,229,235);">
+<div class="infos">
+
+<div>
+<div class="titre_p">Plus Rapide</div>
+<div class="para">
+BeeDroid est plus rapide en terme de temp de localisation de votre smartphone,de plus notre application vous offre <br>
+la possibilité de localiser les 10 derniers positions consulté par votre mobile.
+</div>
+<div class="im1"></div>
+</div>
+
+<div>
+<div class="titre_p">Plus Confiant</div>
+<div class="para">
+BeeDroid vous offre la sécurité de vos données personnelles et il vous garentie que vos données reste protégé meme si<br>
+vous avez perdu votre smartphone, de plus avec BeeDroid vous améliorer la chance de récuperer votre mobile.
+</div>
+<div class="im2"></div>
+</div>
+
+<div>
+<div class="titre_p">Plus Générale</div>
+<div class="para">
+BeeDroid vous garentie la récupérations de vos données personnelles tels que vos contacts,photos,messages et vidéos...
+</div>
+<div class="im3"></div>
+</div>
+
+
+
+
+<div class="and_container">
+<div class="android_logo_circ"><div class="android_logo"></div></div>
+<div class="android">
+Notre application androide est disponible sur Google play store ou du lien de téléchargement directe à partir de ce site web,l'installation de cet application sur votre smartphone est nécessaire pour pouvoir utiliser nos services.
+cette application vous permet de sécuriser vos données personnelles à long terme,il vous garentie une protection de vos photos,vos messages...<br><br>
+Notre application est simple à installer et utiliser ( l'installation seulement dans 4 étapes ) ,efficace et trés pratique.<br><br>
+<center>Pour pouvoir activer la géolocalisation de votre mobile il faut :</center><br><br>
+1) Télécharger l'application androide.<br>
+2) Installer lapplication et suivre les étapes.<br>
+3) Accepter les termes et les conditions d'utilisation.<br>
+4) Creer un compte et acceder à votre espace.
+ 
+
+</div>
+
+
+</div>
+
+<div class="web_container">
+<div class="web_logo_circ"><div class="web_logo"></div></div>
+<div class="web">
+Après avoir installer et configurer votre application android sur le smart phone ,un login et un mot de passe sera fourni a la fin
+de l'installation ,vous pouvez maintement connecter à votre compte sur notre site web dans lequel vous pouvez localiser votre
+appareil mobile et la controler à distance .<br><br>Dans le cas de perte ou de vol de votre mobile ,vous pouvz consulter notre site web 
+pour localiser votre appareil mobile ,effectuer un appel audio-visuel et récupere vos données personnelles et divers autres options .<br>
+Si vous avez besoin de plus de renseignemets vous pouvez nous contactez sur la messagerie électronique ou visiter nos pages<br>
+officielles sur les réseaux sociaux .<br><br>
+Bienvenu à notre application et on espere etre à la hauteur et nous sommes toujour à vos service.
+ 
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="footer">
+<div class="bottom_div">
+A propos de BeeDroid :<br> <br>
+BeeDroid est la nouvelle application de géolocalisation des smartphones
+androide , grace à ces divers fonctionalitées vous pouvez aujourd'hui 
+récuperer votre mobile perdu facilement  et vous pouvez sécuriser vos 
+données personnelles et les récuperer meme si votre mobile est perdu.
+pour plus d'informations suivez nous sur les réseaux sociaux.
+</div>
+<div style="margin-left:450px;margin-right:auto;">
+<a href="#facebook" onClick="facebook_link();"><div class="facebook_link"><div class="im_fb"></div></div></a>
+<a href="#google" onClick="google_link();"><div class="google_link"><div class="im_go"></div></div></a>
+<a href="#twitter"  onClick="twitter_link();"><div class="twitter_link"><div class="im_tw"></div></div></a>
+<a href="#instagram" onClick="instagram_link();"><div class="linked_link"><div class="im_ins"></div></div></a>
+<a href="#linkedin" onClick="linked_in_link();"><div class="insta_link"><div class="im_link"></div></div></a>
+</div>
+
+</div>
+</div>
+</body>
+</html>	

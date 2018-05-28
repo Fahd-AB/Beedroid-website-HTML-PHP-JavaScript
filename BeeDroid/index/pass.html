@@ -1,0 +1,259 @@
+<html>
+<head>
+	 <link rel="icon" 
+      type="image/ico" 
+      href="../favicon.ico">
+    <link async href="http://fonts.googleapis.com/css?family=Aguafina%20Script" rel="stylesheet" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+	 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	 <script src="../js/sweet-alert.min.js" type="text/javascript"></script>	
+        <link rel="stylesheet" type="text/css" href="../css/sweet-alert.css" /> 
+<title>BeeDroid | Mot de passe oublié</title>
+<style>
+.header{
+height:240px;
+width100%;
+background:rgba(152,214,72,1);
+text-align:center;
+min-width:1300px;
+}
+.font1{
+height:70px;
+width:100%;
+
+font: normal 40px/1 "Aguafina Script", Helvetica, sans-serif;
+color: #fff;
+margin-left:auto;
+margin-right:auto;
+padding-top:8%;
+
+}
+html, body {
+  height: 900px;
+  width: 100%;
+  min-width:1300px;
+  padding: 0;
+  margin: 0;
+  background:#f6f6f6;
+   text-align:center;
+-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+
+}
+.font2{
+font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(36,48,64,1);
+
+}
+
+.container{
+padding-top:50px;
+border: 1px solid #BFE5FF;
+border-radius: 5px;
+width:70%;
+height:600px;
+margin-left:auto;
+margin-right:auto;
+margin-top:40px;
+margin-bottom:40px;
+font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(36,48,64,1);
+}
+.tab{
+padding-top:50px;
+margin-left:auto;
+margin-right:auto;
+height:400px;
+width:90%;
+
+}
+.buttons{
+width:300px;
+height:50px;
+margin-left:auto;
+margin-right:auto;
+}
+.button_style{
+
+border: 2px solid rgba(152,214,72,1);
+padding-top:8px;
+text-align:center;
+height:25px;
+width:110px;
+color:rgba(152,214,72,1);
+}
+
+.button_style:hover{
+background:rgba(152,214,72,1);
+border: 2px solid #fff;
+padding-top:8px;
+text-align:center;
+height:25px;
+width:110px;
+cursor:pointer;
+color:#fff;
+}
+input{
+border: 1px solid #BFE5FF;
+border-radius: 5px;
+height:30px;
+width:200px;
+padding-left:5px;
+}
+
+</style>
+<script type="text/javascript">
+function verifiermail(mail) {
+      if ((mail.indexOf("@")>=0)&&(mail.indexOf(".")>=0)) {
+         return true 
+      } else {
+         
+         return false
+      }
+   }
+function verif_infos(){
+var verif=true;
+
+var name_val=document.getElementById("name").value;
+var mail_val=document.getElementById("mail").value;
+var log_val=document.getElementById("log").value;
+var rep1_val=document.getElementById("rep1").value;
+var rep2_val=document.getElementById("rep2").value;
+var rep3_val=document.getElementById("rep3").value;
+
+var email_true=verifiermail(mail_val);
+
+if(name_val==""){
+var name_val=document.getElementById("name").style.background='#EF7F7F';
+verif=false;
+}
+if((mail_val=="")||(email_true==false)){
+var name_val=document.getElementById("mail").style.background='#EF7F7F';
+verif=false;
+}
+if(log_val==""){
+var name_val=document.getElementById("log").style.background='#EF7F7F';
+verif=false;
+}
+if(rep1_val==""){
+var name_val=document.getElementById("rep1").style.background='#EF7F7F';
+verif=false;
+}
+if(rep1_val==""){
+var name_val=document.getElementById("rep2").style.background='#EF7F7F';
+verif=false;
+}
+if(rep3_val==""){
+var name_val=document.getElementById("rep3").style.background='#EF7F7F';
+verif=false;
+}
+if(verif==true){
+var select1=document.getElementById("s1").value;
+var select2=document.getElementById("s2").value;
+var select3=document.getElementById("s3").value;
+var res1="";
+var res2="";
+var res3="";
+
+var res1=select1+rep1_val;
+if(select2=="Quel est votre langue prèféré ?"){
+select2="Quel est votre langue prefere ?"
+}
+var res2=select2+rep2_val;
+var res3=select3+rep3_val;
+
+
+
+
+
+var dem ='{"table":"demandes","login":"'+log_val+'","op":"insert","name":"'+name_val+'","email":"'+mail_val+'","q1":"'+res1+'","q2":"'+res2+'","q3":"'+res3+'"}';
+$.getJSON("/BeeDroid/controler/main.php",{client_request:dem});
+swal("Succès !", "votre demande a été envoyé .", "success");
+document.getElementById("name").value="";
+document.getElementById("mail").value="";
+document.getElementById("log").value="";
+document.getElementById("rep1").value="";
+document.getElementById("rep2").value="";
+document.getElementById("rep3").value="";
+}
+
+}
+
+
+
+
+
+
+
+
+
+function cancel(){
+document.getElementById("name").value="";
+document.getElementById("mail").value="";
+document.getElementById("log").value="";
+document.getElementById("rep1").value="";
+document.getElementById("rep2").value="";
+document.getElementById("rep3").value="";
+document.location.href="../load.php";
+}
+function reset_name(){
+document.getElementById("name").style.background='#fff';
+}
+function reset_mail(){
+document.getElementById("mail").style.background='#fff';
+}
+function reset_log(){
+document.getElementById("log").style.background='#fff';
+}
+function reset_rep1(){
+document.getElementById("rep1").style.background='#fff';
+}
+function reset_rep2(){
+document.getElementById("rep2").style.background='#fff';
+}
+function reset_rep3(){
+document.getElementById("rep3").style.background='#fff';
+}
+
+</script>
+
+</head>
+
+<body>
+<div class="header">
+<div class="font1"> 
+Récupération de mot de passe BeeDroid 
+</div>
+</div>
+<div class="container">
+<div class="font2">Formulaire de vérification d'identité</div>
+<div class="tab">
+<center><table>
+<tr><td>Nom et prénom :</td><td><input id="name" type="text" placeholder="votre nom ici" onFocus="reset_name();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Email :</td><td><input id="mail" type="text" placeholder="votre email ici" onFocus="reset_mail();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Login :</td><td><input id="log" type="text" placeholder="votre login ici" onFocus="reset_log();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Question 1 :</td><td><select id="s1"><option>Quel est le nom de votre meilleur ami ?</option><option>Quel est votre métier prèféré ?</option><option>Quel est le modèle de votre futur voiture ?</option></select></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Votre réponse :</td><td><input id="rep1" type="text" placeholder="votre réponse ici" onFocus="reset_rep1();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Question 2 :</td><td><select id="s2"><option>Quel est votre lieux preféré ?</option><option>Quel est votre langue prèféré ?</option><option>Quel est le nom de ton ancle prèferé ?</option></select></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Votre réponse :</td><td><input id="rep2" type="text" placeholder="votre réponse ici" onFocus="reset_rep2();"></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Question 3 :</td><td><select  id="s3"><option>Quel est le nom de votre animal prèféré ?</option><option>Quel est votre lieu de naissance ?</option><option>Quel est la date de naissance de votre père ?</option></select></td></tr>
+<tr></tr><tr></tr>
+<tr><td>Votre réponse :</td><td><input id="rep3" type="text" placeholder="votre réponse ici" onFocus="reset_rep3();"></td></tr>
+</table></center></div>
+<div class="buttons"><a href="#cancel"><div style="float:left;" class="button_style" onClick="cancel();">Annuler</div></a><a href="#send" onClick="verif_infos();"><div style="float:right;" class="button_style" type="button">Envoyer</div></a></div>
+</div>
+
+
+</body>
+</html>

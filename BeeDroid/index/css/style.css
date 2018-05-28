@@ -1,0 +1,746 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+
+width:100%;
+min-width:1300px;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #243040;
+  background-color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body, html {
+  /* prevent horizontal scrolling */
+  overflow-x: hidden;
+}
+
+a {
+  color: #9cb3a8;
+  text-decoration: none;
+}
+
+.menu_top{
+
+width:100%;
+height:70px;
+background:rgba(152,214,72,1);
+
+}
+.elt_connect{
+float:right;
+margin-right:10px;
+color:#fff;
+width:150px;
+height:100%;
+padding-top:25px;
+background:rgba(152,214,72,1);
+text-align:center;
+}
+.elt_connect:hover{
+float:right;
+margin-right:10px;
+color:rgba(152,214,72,1);
+width:150px;
+padding-top:25px;
+height:100%;
+background:#fff;
+text-align:center;
+cursor:pointer;
+}
+.elt_tele{
+float:right;
+
+color:#fff;
+width:150px;
+height:100%;
+padding-top:25px;
+background:rgba(152,214,72,1);
+text-align:center;
+}
+.elt_tele:hover{
+float:right;
+
+color:rgba(152,214,72,1);
+width:150px;
+padding-top:25px;
+height:100%;
+background:#fff;
+text-align:center;
+cursor:pointer;
+}
+.font1{
+font: normal 50px/1 "Aguafina Script", Helvetica, sans-serif;
+ color:rgba(36,48,64,1);
+ text-align:center;
+ margin-bottom:30px;
+}
+.infos{
+text-align:center;
+height:90%;
+widows:100%;
+padding:20px;
+}
+.footer{
+height:10%;
+widows:100%;
+background:#484848;
+padding-top:80px;
+padding-left:20px;
+}
+.and_container{
+height:200px;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+.android{
+float:left;
+margin-left:1%;
+height:288px;
+color:rgba(36,48,64,1);
+width:600px;
+border: 1px solid rgba(152,214,72,0.9);
+border-radius: 5px;
+text-align:left;
+padding:8px;
+ font-size: 1.45rem;
+ line-height:17px;
+  font-family: "Open Sans", sans-serif;
+}
+.android_logo_circ{
+padding-top:40px;
+margin-top:7%;
+float:left;
+border: 1px solid rgba(152,214,72,1);
+border-radius: 80px;
+height:150px;
+width:150px;
+}
+.android_logo{
+background-image:url("/BeeDroid/index/images/Android1.png");
+background-repeat:no-repeat;
+margin-top:-25px;
+margin-left:-7px;
+margin-right:auto;
+height:110%;
+width:100%;
+}
+.bottom_div{
+ font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+width:340px;
+height:110px;
+border-radius: 5px;
+padding:8px;
+color:#fff;
+float:left;
+}
+.im_fb{
+background-image:url("/BeeDroid/index/images/fb.png");
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+}
+.im_go{
+background-image:url("/BeeDroid/index/images/google.png");
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+}
+.im_tw{
+background-image:url("/BeeDroid/index/images/twitter.png");
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+}
+.im_ins{
+background-image:url("/BeeDroid/index/images/insta.png");
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+}
+.im_link{
+background-image:url("/BeeDroid/index/images/linked.png");
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+}
+.facebook_link{
+background:#fff;
+height:90px;
+width:90px;
+border: 1px solid #fff;
+border-radius: 80px;
+margin-left:2%;
+float:left;
+padding-left:3px;
+padding-top:3px;
+text-align:center;
+}
+.twitter_link{
+background:#fff;
+height:90px;
+width:90px;
+border: 1px solid #fff;
+border-radius: 80px;
+margin-left:2%;
+float:left;
+padding-left:2.7px;
+padding-top:3.6px;
+text-align:center;
+}
+.google_link{
+background:#fff;
+height:90px;
+width:90px;
+border: 1px solid #fff;
+border-radius: 80px;
+margin-left:2%;
+float:left;
+padding-left:3.2px;
+padding-top:3.5px;
+text-align:center;
+}
+.linked_link{
+background:#fff;
+height:90px;
+width:90px;
+border: 1px solid #fff;
+border-radius: 80px;
+margin-left:2%;
+float:left;
+padding-left:3px;
+padding-top:3.5px;
+text-align:center;
+}
+.insta_link{
+background:#fff;
+height:90px;
+width:90px;
+border: 1px solid #fff;
+border-radius: 80px;
+margin-left:2%;
+float:left;
+padding-left:3.7px;
+padding-top:3.2px;
+text-align:center;
+}
+
+.web_container{
+margin-top:110px;
+height:200px;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+.web{
+float:left;
+margin-left:1%;
+height:270px;
+color:rgba(36,48,64,1);
+width:600px;
+border: 1px solid rgba(152,214,72,0.9);
+border-radius: 5px;
+text-align:left;
+padding:8px;
+ font-size: 1.45rem;
+ line-height:17px;
+  font-family: "Open Sans", sans-serif;
+}
+.web_logo_circ{
+padding-top:40px;
+margin-top:7%;
+float:left;
+border: 1px solid rgba(152,214,72,1);
+border-radius: 80px;
+height:150px;
+width:150px;
+}
+.web_logo{
+background-image:url("/BeeDroid/index/images/web.png");
+background-repeat:no-repeat;
+margin-top:-7px;
+margin-left:27px;
+margin-right:auto;
+height:110%;
+width:100%;
+}
+
+.titre_p{
+margin-top:20px;
+margin-bottom:20px;
+font: normal 32px/1 "Open Sans", Helvetica, sans-serif;
+color:rgba(36,48,64,1);
+}
+.para{
+margin-bottom:20px;
+}
+.im1{
+background-image:url("/BeeDroid/index/images/map_andro.jpg");
+background-repeat:no-repeat;
+width:640px;
+height:420px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px;
+}
+.im2{
+background-image:url("/BeeDroid/index/images/conf.jpg");
+background-repeat:no-repeat;
+width:640px;
+height:420px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px;
+}
+.im3{
+background-image:url("/BeeDroid/index/images/sixsth.jpg");
+background-repeat:no-repeat;
+width:640px;
+height:420px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px;
+}
+.logo{
+background-image:url("/BeeDroid/index/images/bee15.png");
+background-repeat:no-repeat;
+height:60px;
+width:80px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:10px;
+}
+.buttons_container{
+width:500px;
+height:50px;
+margin-top:10px;
+margin-left:auto;
+margin-right:auto;
+}
+.bouton_tele{
+border: 2px solid rgba(36,48,64,1);
+padding-top:12px;
+text-align:center;
+height:100%;
+width:170px;
+float:right;
+color:rgba(36,48,64,1);
+}
+.bouton_faq{
+padding-top:12px;
+text-align:center;
+height:100%;
+width:170px;
+float:left;
+border: 2px solid rgba(36,48,64,1);
+color:rgba(36,48,64,1);
+}
+.bouton_tele:hover{
+border: 2px solid #d6dfdb;
+padding-top:12px;
+text-align:center;
+height:100%;
+width:170px;
+float:right;
+background:rgba(36,48,64,1);
+color: #d6dfdb;
+cursor:pointer;
+}
+.bouton_faq:hover{
+border: 2px solid #d6dfdb;
+padding-top:12px;
+text-align:center;
+height:100%;
+width:170px;
+float:left;
+background:rgba(36,48,64,1);
+color: #d6dfdb;
+cursor:pointer;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+main {
+  position: relative;
+  z-index: 2;
+  /* fix bug on iOS */
+  height: 700px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 200px 5%;
+ /* background-color: #9cb3a8;*/
+ background-image:url("/BeeDroid/index/images/s.jpg");
+background-repeat:no-repeat;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  font-family: "Merriweather", serif;
+  color: #d6dfdb;
+  line-height: 1.6;
+}
+
+.navigation-is-open main {
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.top{
+font-family: "Merriweather", serif;
+  color: #d6dfdb;
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 1.6;
+
+}
+
+
+
+.cd-nav-trigger {
+  position: relative;
+  z-index: 3;
+  left: 1%;
+  top: 20px;
+  height: 54px;
+  width: 54px;
+  background-color: #243040;
+  border-radius: 50%;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+.cd-nav-trigger .cd-nav-icon {
+  /* icon created in CSS */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.cd-nav-trigger .cd-nav-icon::before, .cd-nav-trigger .cd-nav-icon:after {
+  /* upper and lower lines of the menu icon */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+.cd-nav-trigger .cd-nav-icon::before {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.cd-nav-trigger .cd-nav-icon::after {
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+.no-touch .cd-nav-trigger:hover .cd-nav-icon::after {
+  top: 2px;
+}
+.no-touch .cd-nav-trigger:hover .cd-nav-icon::before {
+  top: -2px;
+}
+.cd-nav-trigger svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cd-nav-trigger circle {
+  /* circle border animation */
+  -webkit-transition: stroke-dashoffset 0.4s 0s;
+  -moz-transition: stroke-dashoffset 0.4s 0s;
+  transition: stroke-dashoffset 0.4s 0s;
+}
+.navigation-is-open .cd-nav-trigger {
+  /* rotate trigger when navigation becomes visible */
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.navigation-is-open .cd-nav-trigger .cd-nav-icon::after,
+.navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
+  /* animate arrow --> from hamburger to arrow */
+  width: 50%;
+  -webkit-transition: -webkit-transform 0.5s, width 0.5s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s;
+  transition: transform 0.5s, width 0.5s;
+}
+.navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.navigation-is-open .cd-nav-trigger .cd-nav-icon::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::after, .no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::before {
+  top: 0;
+}
+.navigation-is-open .cd-nav-trigger circle {
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 0.4s 0.3s;
+  -moz-transition: stroke-dashoffset 0.4s 0.3s;
+  transition: stroke-dashoffset 0.4s 0.3s;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-nav-trigger {
+    top: 40px;
+  }
+}
+
+.cd-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 3000px;
+  overflow:hidden;
+  width: 100%;
+  background-color: #243040;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.7s;
+  -moz-transition: visibility 0s 0.7s;
+  transition: visibility 0s 0.7s;
+}
+.cd-nav .cd-navigation-wrapper {
+  /* all navigation content */
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 40px 5% 40px calc(5% + 80px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+}
+.navigation-is-open .cd-nav {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.navigation-is-open .cd-nav .cd-navigation-wrapper {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+.cd-nav h2 {
+  position: relative;
+  margin-bottom: 1.7em;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #080b0f;
+  text-transform: uppercase;
+}
+.cd-nav h2::after {
+  /* bottom separation line */
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  height: 1px;
+  width: 60px;
+  background-color: currentColor;
+}
+.cd-nav .cd-primary-nav {
+  margin-top: 60px;
+}
+.cd-nav .cd-primary-nav li {
+  margin: 1.6em 0;
+}
+.cd-nav .cd-primary-nav a {
+  font-family: "Merriweather", serif;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+.cd-nav .cd-primary-nav a.selected {
+  color: #ffffff;
+}
+.no-touch .cd-nav .cd-primary-nav a:hover {
+  color: #ffffff;
+}
+.cd-nav .cd-contact-info {
+  margin-top: 80px;
+}
+.cd-nav .cd-contact-info li {
+  font-family: "Merriweather", serif;
+  margin-bottom: 1.5em;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.3);
+}
+.cd-nav .cd-contact-info a {
+  color: #ffffff;
+}
+.cd-nav .cd-contact-info span {
+  display: block;
+}
+.cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
+  font-size: 1.6rem;
+}
+@media only screen and (min-width: 1170px) {
+  .cd-nav .cd-navigation-wrapper {
+    padding: 62px 20%;
+  }
+  .cd-nav .cd-navigation-wrapper::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .cd-nav .cd-half-block {
+    width: 50%;
+    float: left;
+  }
+  .cd-nav .cd-primary-nav {
+    margin-top: 0;
+  }
+  .cd-nav h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5.6em;
+  }
+  .cd-nav .cd-primary-nav li {
+    margin: 2em 0;
+  }
+  .cd-nav .cd-primary-nav a {
+    font-size: 4.4rem;
+  }
+  .cd-nav .cd-contact-info {
+    margin-top: 120px;
+    text-align: right;
+  }
+  .cd-nav .cd-contact-info li {
+    margin-bottom: 2.4em;
+  }
+  .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
+    font-size: 2rem;
+  }
+}
+
+.no-js main {
+  height: auto;
+  overflow: visible;
+}
+
+.no-js .cd-nav {
+  position: static;
+  visibility: visible;
+}
+.no-js .cd-nav .cd-navigation-wrapper {
+  height: auto;
+  overflow: visible;
+  padding: 100px 5%;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

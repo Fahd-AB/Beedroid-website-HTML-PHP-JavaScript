@@ -1,0 +1,1720 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  color: #8f9cb5;
+  background-color: #ffffff;
+}
+
+a {
+  color: #35a785;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.img-replace {
+  /* replace text with an image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+.mainbar1{
+ margin-top: 10px;
+ height: 30px;
+  width: 700px;
+  line-height: 20px;
+  text-align: center;
+  background: rgb(93,97,100);
+  color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+   position: relative;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  font: normal 16px/normal "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+/* -------------------------------- 
+
+xpopup 
+
+
+-------------------------------- */
+
+.cd-popup {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+   visibility:hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+
+.cd-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.y {
+ 
+
+  
+}
+
+.cd-popup.is-hiding{
+  opacity: 1;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.cd-popup-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 410px;
+  margin: 4em auto;
+ background: #ffffff;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  
+}
+
+.cd-popup-container .cd-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #8f9cb5;
+}
+.cd-popup-container .cd-popup-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+.cd-popup-container .cd-popup-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 8px;
+}
+.is-visible .cd-popup-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (min-width: 1170px) {
+  .cd-popup-container {
+    margin: 8em auto;
+  }
+}
+
+.cd-popup-container:hover {
+   cursor: -webkit-grab; cursor: -moz-grab;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wall1{
+background-image: url("/BeeDroid/moon.jpg");
+background-repeat:no-repeat;
+-webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bouton1{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 40px;
+  height: 54px;
+  border: none;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(0,0,0,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #3498db;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_msg {
+background-image: url("/BeeDroid/icons/Icons/Messaging.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_map {
+background-image: url("/BeeDroid/icons/Icons/position.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_cam {
+background-image: url("/BeeDroid/icons/Icons/camera.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_con {
+background-image: url("/BeeDroid/icons/Icons/contact.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_play {
+background-image: url("/BeeDroid/icons/Icons/googleplay.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_music {
+background-image: url("/BeeDroid/icons/Icons/Music.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_sms {
+background-image: url("/BeeDroid/icons/Icons/sms4.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_pos{
+background-image: url("/BeeDroid/icons/Icons/local(1).png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_down{
+background-image: url("/BeeDroid/icons/Icons/downloads.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_vid{
+background-image: url("/BeeDroid/icons/Icons/video.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_help {
+background-image: url("/BeeDroid/icons/Icons/help-icon.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_perte {
+background-image: url("/BeeDroid/icons/Icons/perte.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_call {
+background-image: url("/BeeDroid/icons/Icons/call.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_lock {
+background-image: url("/BeeDroid/icons/Icons/lock.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_affiche{
+background-image: url("/BeeDroid/icons/Icons/msg.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_erase{
+background-image: url("/BeeDroid/icons/Icons/clear.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.icon_restore{
+background-image: url("/BeeDroid/icons/Icons/backup.png");
+-webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 66px;
+  height: 69px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+  box-shadow: 0 0 9px 4px rgba(0,0,0,0.5) ;
+}
+.top1{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 600px;
+  height: 118px;
+  border: none;
+  -webkit-border-radius: 11px 11px 0 0;
+  border-radius: 11px 11px 0 0;
+  font: normal 40px/3 "Aguafina Script", Helvetica, sans-serif;
+  color: white;
+   text-indent: 760px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 2px;
+  background: rgba(143,207,60,1);
+  text-shadow: 7px 0 9px rgba(9,73,8,1) ;
+}
+.img{
+margin-left: -800px;
+}
+.bottom1 {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 600px;
+  height: 61px;
+  margin-bottom:1px;
+  border: none;
+  -webkit-border-radius: 0 0 11px 11px;
+  border-radius: 0 0 11px 11px;
+  text-indent: 550px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  letter-spacing: 2px;
+  background: rgba(143,207,60,1);
+  text-shadow: 7px 0 9px rgba(9,73,8,1) ;
+}
+.cent1{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 600px;
+  height: 230px;
+  margin: 0 0 1px;
+  border: none;
+  background: rgba(231,234,238,1);
+}
+.form1 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  height: 25px;
+  cursor: text ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+  -webkit-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+.form1:hover {
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+.form1:focus {
+  width: 213px;
+  cursor: default;
+  padding: -13px 20px 0;
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+.btn_cnx{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  border: 1px solid rgba(125,195,49,1);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font: normal 11px/20px "Advent Pro", Helvetica, sans-serif;
+  color: rgba(125,195,49,1);
+  background: #ffffff;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+.btn_cnx:hover {
+  border: 2px solid rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+  background: rgba(125,195,49,1);
+}
+
+.btn_cnx:active {
+  border: 2px solid rgba(125,195,49,1);
+  color: rgba(125,195,49,1);
+  background: rgb(255,255,255);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.search1 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 150px;
+  height: 20px;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 21px;
+  border-radius: 21px;
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+  box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.5) inset;
+  -webkit-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+.search1:hover {
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 500ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+.search1:focus {
+  width: 213px;
+  cursor: default;
+  padding: -13px 20px 0;
+  color: rgba(140,140,140,1);
+  background: #ffffff;
+  -webkit-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+.btn_b1 {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 5px;
+  height: 18px;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: white;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(93,97,100,1);
+}
+
+.btn_b1:hover {
+  color: rgba(0,255,250,1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_b1:active {
+}
+.btn_b2 {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 65px;
+  height: 18px;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: white;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(93,97,100,1);
+}
+
+.btn_b2:hover {
+  color: rgba(0,255,250,1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_b2:active {
+}
+.box1 {
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+
+  /*-webkit-box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) ;*/
+  
+}
+
+.styl{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  
+ 
+
+}
+.resettrans{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+}
+.box21{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+ 
+
+  /*-webkit-box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) ;*/
+  
+}
+
+.box22 {
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+ 
+  
+  /*-webkit-box-shadow: 0 0 9px 2px rgba(0,0,0,0.5) ;*/
+  
+}
+
+.box23 {
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+ 
+}
+
+.box24 {
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+ 
+  
+}
+
+.box25 {
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+visibility:hidden;
+ 
+  
+}
+
+
+.info1-trigger {
+  display: block;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  margin: 3em auto;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50em;
+  background: #35a785;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
+}
+@media only screen and (min-width: 1170px) {
+  .info1-trigger {
+    margin: 6em auto;
+  }
+}
+
+/* -------------------------------- 
+
+xpopup 
+
+-------------------------------- */
+.info1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.info1.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.info1-container {
+  position: relative;
+  width: 90%;
+  max-width: 650px;
+  height: 560px;
+  margin: 4em auto;
+ background: #ffffff;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  text-align: center;
+ box-shadow: 0 0 20px rgba(143,207,60,1);
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -o-transform: translateY(-40px);
+  transform: translateY(-40px);
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.info1-container p {
+  padding: 3em 1em;
+}
+.info1-container .info1-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+.info1-container .info1-close::before, .info1-container .info1-close::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  width: 14px;
+  height: 3px;
+  background-color: #8f9cb5;
+}
+.info1-container .info1-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 8px;
+}
+.info1-container .info1-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 8px;
+}
+.is-visible .info1-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (min-width: 1170px) {
+  .info1-container {
+    margin: 8em auto;
+  }
+}
+/* *********************************************************************************************************************/
+
+
+.msgs {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 610px;
+  height: 250px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 30px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-align:left;
+  background: rgba(216,216,216,1);
+  overflow-y: auto;
+}
+
+.msg_rep {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 610px;
+  height: 124px;
+  margin-left: 5px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: black;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(216,216,216,1);
+}
+.t1{
+text-align:left;
+margin-left: 20px;
+}
+.btn_msg {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100px;
+  height: 25px;
+  border: none;
+  margin-left:172px;
+  margin-top: -500px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: white;
+  text-align: center;
+  text-indent: 7px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+   background: rgb(93,97,100);
+}
+
+.btn_msg:hover {
+  color: rgba(0,255,250,1);
+}
+
+.btn_msg:active {
+} 
+.btn_play{
+background: rgba(93,97,100,1);
+background-image: url("/BeeDroid/icons/Icons/play.png");
+width: 8px;
+height: 16px;
+ -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+   text-align: center;
+     font: normal 12px/1 "Times New Roman", Times, serif;
+}
+.btn_play:hover {
+cursor: pointer;
+}
+.option_perte {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 249px;
+  height: 180px;
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+/* style movement btn 1*/
+
+
+.animate1{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+    -webkit-animation-name: example1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-name: example1;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example1 {
+   0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example1 {
+0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+
+/* style movement btn 2*/
+
+
+
+.animate2{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+    -webkit-animation-name: example2; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-name: example2;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example2 {
+   0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+
+/*style movement btn 3*/
+
+
+
+.animate3{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+    -webkit-animation-name: example3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-name: example3;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example3 {
+   0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example3 {
+0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/*style movement btn 4*/
+
+
+
+.animate4{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+    -webkit-animation-name: example4; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-name: example4;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example4 {
+   0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example4 {
+0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/*style movement btn 3*/
+
+
+
+.animate5{
+position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 83px;
+  height: 90px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+   font: normal 11px/1 "Times New Roman", Times, serif;
+  color: black;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+    -webkit-animation-name: example5; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    animation-name: example5;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example5 {
+   0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example5 {
+0%   {left:250px; top:-90px;}
+    50%  {left:250px; top: 0px;}
+    100% {left:0px; top:0px;}
+}
+/*retour des boutons*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.powerbtn{
+background: rgba(93,97,100,1);
+background-image: url("/BeeDroid/icons/Icons/power.png");
+width: 8px;
+height: 16px;
+ -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  visibility:visible;
+  text-overflow: ellipsis;
+   text-align: center;
+     font: normal 12px/1 "Times New Roman", Times, serif;
+}
+.powerbtn:hover {
+background-image: url("/BeeDroid/icons/Icons/power1.png");
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bar1{
+margin-left:300px;
+visibility:hidden;
+}
+
+
+
+#circularG{
+position:relative;
+width:50px;
+height:50px}
+
+.circularG{
+position:absolute;
+background-color:#8DCF3C;
+width:11px;
+height:11px;
+-moz-border-radius:8px;
+-moz-animation-name:bounce_circularG;
+-moz-animation-duration:1.04s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:normal;
+-webkit-border-radius:8px;
+-webkit-animation-name:bounce_circularG;
+-webkit-animation-duration:1.04s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:normal;
+-ms-border-radius:8px;
+-ms-animation-name:bounce_circularG;
+-ms-animation-duration:1.04s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:normal;
+-o-border-radius:8px;
+-o-animation-name:bounce_circularG;
+-o-animation-duration:1.04s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:normal;
+border-radius:8px;
+animation-name:bounce_circularG;
+animation-duration:1.04s;
+animation-iteration-count:infinite;
+animation-direction:normal;
+}
+
+#circularG_1{
+left:0;
+top:20px;
+-moz-animation-delay:0.39s;
+-webkit-animation-delay:0.39s;
+-ms-animation-delay:0.39s;
+-o-animation-delay:0.39s;
+animation-delay:0.39s;
+}
+
+#circularG_2{
+left:5px;
+top:5px;
+-moz-animation-delay:0.52s;
+-webkit-animation-delay:0.52s;
+-ms-animation-delay:0.52s;
+-o-animation-delay:0.52s;
+animation-delay:0.52s;
+}
+
+#circularG_3{
+top:0;
+left:20px;
+-moz-animation-delay:0.65s;
+-webkit-animation-delay:0.65s;
+-ms-animation-delay:0.65s;
+-o-animation-delay:0.65s;
+animation-delay:0.65s;
+}
+
+#circularG_4{
+right:5px;
+top:5px;
+-moz-animation-delay:0.78s;
+-webkit-animation-delay:0.78s;
+-ms-animation-delay:0.78s;
+-o-animation-delay:0.78s;
+animation-delay:0.78s;
+}
+
+#circularG_5{
+right:0;
+top:20px;
+-moz-animation-delay:0.91s;
+-webkit-animation-delay:0.91s;
+-ms-animation-delay:0.91s;
+-o-animation-delay:0.91s;
+animation-delay:0.91s;
+}
+
+#circularG_6{
+right:5px;
+bottom:5px;
+-moz-animation-delay:1.04s;
+-webkit-animation-delay:1.04s;
+-ms-animation-delay:1.04s;
+-o-animation-delay:1.04s;
+animation-delay:1.04s;
+}
+
+#circularG_7{
+left:20px;
+bottom:0;
+-moz-animation-delay:1.17s;
+-webkit-animation-delay:1.17s;
+-ms-animation-delay:1.17s;
+-o-animation-delay:1.17s;
+animation-delay:1.17s;
+}
+
+#circularG_8{
+left:5px;
+bottom:5px;
+-moz-animation-delay:1.3s;
+-webkit-animation-delay:1.3s;
+-ms-animation-delay:1.3s;
+-o-animation-delay:1.3s;
+animation-delay:1.3s;
+}
+
+@-moz-keyframes bounce_circularG{
+0%{
+-moz-transform:scale(1)}
+
+100%{
+-moz-transform:scale(.3)}
+
+}
+
+@-webkit-keyframes bounce_circularG{
+0%{
+-webkit-transform:scale(1)}
+
+100%{
+-webkit-transform:scale(.3)}
+
+}
+
+@-ms-keyframes bounce_circularG{
+0%{
+-ms-transform:scale(1)}
+
+100%{
+-ms-transform:scale(.3)}
+
+}
+
+@-o-keyframes bounce_circularG{
+0%{
+-o-transform:scale(1)}
+
+100%{
+-o-transform:scale(.3)}
+
+}
+
+@keyframes bounce_circularG{
+0%{
+transform:scale(1)}
+
+100%{
+transform:scale(.3)}
+
+}
+

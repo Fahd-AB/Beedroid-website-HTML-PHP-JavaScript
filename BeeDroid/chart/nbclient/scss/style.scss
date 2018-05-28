@@ -1,0 +1,12 @@
+@import "compass/css3";
+
+body { 
+  font-family: Tahoma, Arial, Verdana;
+  font-size: 12px;
+  color: black; 
+  
+  #chartdiv  {
+	  width: 640px;
+	  height: 400px;
+  }
+}
